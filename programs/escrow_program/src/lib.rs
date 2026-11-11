@@ -27,4 +27,8 @@ pub mod escrow_program {
     pub fn refund(ctx: Context<Refund>) -> Result<()> {
         ctx.accounts.refund()
     }
+
+    pub fn update(ctx: Context<Update>, receive: u64) -> Result<()> {
+        ctx.accounts.update(receive)
+    }
 }
